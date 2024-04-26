@@ -6,7 +6,7 @@ var pool = mysql.createPool({
   connectionLimit: 10,
   host: 'bom1plzcpnl503931.prod.bom1.secureserver.net',
   user: 'pratiksha',
-  password: 'Pratiksha1234',
+  password: 'Y[7QN6pm~F~q',
   database: 'pratikshaDb'
 });
 router.get('/', function(req, res, next) {
