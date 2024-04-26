@@ -4,10 +4,10 @@ var mysql = require('mysql');
 
 var pool = mysql.createPool({
   connectionLimit: 10,
-  host: 'bom1plzcpnl503931.prod.bom1.secureserver.net',
-  user: 'pratiksha',
-  password: 'Y[7QN6pm~F~q',
-  database: 'pratikshaDb'
+  host: 'srv1391.hstgr.io',
+  user: 'u858543158_arpita',
+  password: 'Arpita@1234#',
+  database: 'u858543158_arpitaDb'
 });
 router.get('/', function(req, res, next) {
     pool.getConnection(function(err, connection) {
@@ -17,7 +17,7 @@ router.get('/', function(req, res, next) {
         return;
       }
   
-      connection.query('SELECT * FROM pratikshaTable', function(err, results, fields) {
+      connection.query('SELECT * FROM arpitaTable', function(err, results, fields) {
         connection.release(); // release the connection
   
         if (err) {
